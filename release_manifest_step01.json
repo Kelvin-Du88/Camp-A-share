@@ -1,0 +1,9 @@
+{
+  "stage_dir": "/home/dell/jiaxing/bby/MSAN-Quant/release_work/Camp-A-share_release",
+  "contains_core_code": true,
+  "contains_1pct_data": false,
+  "contains_docs": false,
+  "contains_result_tables": false,
+  "contains_figures": false,
+  "note": "Step 01 only organizes renamed CAMP core source code. Step 02 will create the 1% processed sample dataset. Step 03 will write README and docs."
+}
