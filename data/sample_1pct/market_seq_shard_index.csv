@@ -1,0 +1,7 @@
+shard_id,file,market_row_start,market_row_end_exclusive,n_rows,size_mb
+0,market_seq_shards/market_seq_shard_0000.npy,0,500,500,29.07
+1,market_seq_shards/market_seq_shard_0001.npy,500,1000,500,29.07
+2,market_seq_shards/market_seq_shard_0002.npy,1000,1500,500,29.07
+3,market_seq_shards/market_seq_shard_0003.npy,1500,2000,500,29.07
+4,market_seq_shards/market_seq_shard_0004.npy,2000,2500,500,29.07
+5,market_seq_shards/market_seq_shard_0005.npy,2500,2502,2,0.12

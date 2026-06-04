@@ -1,0 +1,40 @@
+{
+  "sample_rate": 0.01,
+  "seed": 20260603,
+  "n_total": 9476695,
+  "n_sample": 94766,
+  "shard_size": 5000,
+  "n_shards": 19,
+  "meta_source": "data_external/msan_samples_full_qfq_norm/meta_L60_H5_full_with_period_label.parquet",
+  "arrays": {
+    "sample_meta": "sample_meta_1pct.parquet",
+    "market_index_map": "market_seq_index_map_1pct.csv",
+    "row_shards": "sample_shard_*.npz",
+    "market_sequence_shards": "market_seq_shards/market_seq_shard_*.npy",
+    "market_sequence_shard_index": "market_seq_shard_index.csv",
+    "market_sequence_date_table": "market_seq_dates_1pct.parquet"
+  },
+  "shard_npz_keys": [
+    "X_stock_seq",
+    "X_cross_today",
+    "y_ret_5d",
+    "y_up_5d",
+    "market_seq_idx",
+    "original_row_index"
+  ],
+  "shapes": {
+    "X_stock_seq_per_row": [
+      60,
+      26
+    ],
+    "X_cross_today_per_row": [
+      13
+    ],
+    "X_market_seq_by_date_1pct": [
+      2502,
+      60,
+      254
+    ]
+  },
+  "note": "This is a reproducible 1% processed sample of the CAMP A-share panel dataset. Market-level sequences are sharded to keep each public repository file below GitHub's file-size limit. The sample is for research reproduction and code inspection, not for live trading."
+}
